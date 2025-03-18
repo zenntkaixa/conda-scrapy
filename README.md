@@ -10,7 +10,7 @@ A Scrapy spider to scrape population data by country from [Worldometers](https:/
 
 2. Navigate to the project directory:
     ```bash
-   cd worldometers-scraper
+   cd spider_tutorial
    
 3. Create and activate a virtual environment:
     ```
@@ -22,6 +22,6 @@ A Scrapy spider to scrape population data by country from [Worldometers](https:/
     ```bash
     pip install scrapy
     ```
-5. Run the spider:
+5. Run the spider (for worldometers):
     ```bash
-   scrapy crawl worldometers -o population_data.csv
+   scrapy crawl worldometers -O population_data.csv
