@@ -62,9 +62,10 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    "spider_tutorial.pipelines.SpiderTutorialPipeline": 300,
-#}
+ITEM_PIPELINES = {
+   # "spider_tutorial.pipelines.MongodbPipeline": 300, # Enable the MongoDB pipeline
+   "spider_tutorial.pipelines.SQLitePipeline": 300, # Enable the SQLite pipeline
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
